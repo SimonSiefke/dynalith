@@ -13,12 +13,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.2.5",
     "inferno": "^1.4.0",
     "inferno-compat": "^1.4.0",
     "inferno-server": "^1.4.0",
     "module-alias": "^2.0.0",
-    "next": "^2.3.0-alpha1",
+    "next": "^2.3.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-no-ssr": "^1.1.0"
   }
 }
