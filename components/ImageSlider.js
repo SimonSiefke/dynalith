@@ -66,7 +66,7 @@ class ImageSlider extends Component {
     );
 
     return (
-      <div onSSR={<load />} className="slider-container">
+      <div className="slider-container">
 
         {/**this.state.images.map((src, i) => (
           <img src={src} alt={text[i]} className={classes[i]} />

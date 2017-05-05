@@ -7,7 +7,8 @@ const Layout = () => (
     <NavBar />
     <style jsx>
       {`
-      
+
+
       span{
         position: absolute;
         text-align: center;
@@ -22,6 +23,11 @@ const Layout = () => (
         }
     `}
     </style>
+    <style jsx global>{`
+     body {
+       margin:0;
+     }
+   `}</style>
   </div>
 );
 
