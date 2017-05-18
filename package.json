@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "node server.js",
-    "go": "next build&&node server.js"
+    "go": "node server.js",
+    "start": "next build&&node server.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "module-alias": "^2.0.0",
     "next": "^2.2.0",
     "react": "^15.5.4",
+    "react-burger-menu": "^2.0.1",
     "react-dom": "^15.5.4",
     "react-no-ssr": "^1.1.0"
   }

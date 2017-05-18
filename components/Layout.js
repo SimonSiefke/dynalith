@@ -1,14 +1,24 @@
 import React from "react";
 
 import NavBar from "./NavBar";
+import ProtoNavBar from "./ProtoNavBar"
+import Demo from "./example"
+
+
+
+const menus = {
+  slide: {buttonText: 'Slide', items: 1}
+};
+
 
 const Layout = () => (
   <div>
-    <NavBar />
+  <ProtoNavBar/>
+
     <style jsx>
       {`
 
-
+      
       span{
         position: absolute;
         text-align: center;

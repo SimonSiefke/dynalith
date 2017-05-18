@@ -97,7 +97,7 @@ class ImageSlider extends Component {
           {`
             .slider-container {
                	position: relative;
-                width:100vw;
+                width:100%;
                 height: 70vh;
                 overflow: hidden;
                 display:flex;
@@ -118,6 +118,7 @@ class ImageSlider extends Component {
             .dots{
               align-self:flex-end;
               margin:0 auto;
+              margin-bottom: 5;
             }
             .dot{
               padding-left: 8px;

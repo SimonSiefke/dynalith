@@ -10,7 +10,7 @@ const Slogan = props => (
         text-align: center;
         background-color:rgba(255,255,255,0.7);
         bottom:0;
-        left:0;
+        right:0;
         padding: .25em .5em;
         border-radius:10px;
         margin:1em;

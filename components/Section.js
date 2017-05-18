@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Proptypes from "prop-types";
 
-const Section = ({ heading, id, img, text }) => (
-  <section id={id}>
-    <h2>{heading}</h2>
+const Section = ({ heading, id, img, text,color }) => (
+  <section id={id} style={{backgroundColor:color}}>
+    <h2>{heading}{color}</h2>
 
     <div className="img-container">
       <img src={img.src} alt={img.alt} />
@@ -11,10 +11,11 @@ const Section = ({ heading, id, img, text }) => (
     </div>
     <div className="text">
       <p>{text}</p>
-      <a href="" className="btn"><span>Click me</span></a>
+      <a href="" className="btn"><span>Mehr</span></a>
     </div>
 
     <style jsx>{`
+    
   .btn {
   display: block;
   height: 50px;
@@ -27,6 +28,11 @@ const Section = ({ heading, id, img, text }) => (
   color: white;
   font-size: 14px;
   text-align: center;
+  margin-right:2em;
+  margin-left:auto;
+  margin-top:2em;
+  margin-bottom:2em;
+  border-radius:10px;
 }
   .btn:after {
     position: absolute;
@@ -51,8 +57,6 @@ const Section = ({ heading, id, img, text }) => (
   }
 
 
-.text{
-}
 
 *{
   box-sizing:border-box;
@@ -60,22 +64,25 @@ const Section = ({ heading, id, img, text }) => (
 
 section {
     display:flex;
-    border: 4px solid green;
     align-items:center;
     flex-wrap:wrap;
     box-sizing:border-box;
     margin-top:20px;
     justify-content:space-around;
+    border: 2px solid skyblue;
+    width:90%;
+    margin:2em auto;
     /**background-color:lightgray;**/
+    /**background-color:#264F87;**/
 }
 .img-container{
 box-sizing:border-box;
 display:flex;
 flex-wrap:wrap;
 height: 20rem;
-border: 2px solid red;
 align-self:flex-start;
 flex-basis:50%;
+flex:1;
 }
 
 img {
@@ -88,13 +95,15 @@ box-sizing:border-box;
   position: relative;
   display:flex;
   flex-basis:100%;
-  min-width:80px;
 }
 
 .text{
-flex-basis:45%;
+  flex-basis:50%;
+  flex:1;
+  min-width: 300px;
+  align-self:stretch;
+
 box-sizing:border-box;
-border: 3px solid hotpink;
 
 
 }
@@ -102,16 +111,16 @@ p{
 box-sizing:border-box;
 align-self:flex-start;
 margin:0;
-padding:0;
+padding:1em;
 top:0;
+color:white;
 
 margin:0;
-border:10px solid blue;
-min-width: 80px;
 }
 h2{
+  padding: 1em 0;
+  color:white;
   align-self:flex-start;
-  border: 3px solid orange;
   margin:0;
   flex-basis:100%;
   text-align:center;

@@ -12,7 +12,8 @@ const sections = [
     },
     heading: "Lorem ipsum dolor sit",
     text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. ",
-    id: 1
+    id: 1,
+    color:"#76E0A6"
   },
   {
     img: {
@@ -21,7 +22,8 @@ const sections = [
     },
     heading: "Lorem ipsum dolor sit",
     text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. ",
-    id: 2
+    id: 2,
+    color:"lightgreen"
   }
 ];
 
@@ -30,8 +32,8 @@ const Home = () => (
     <Layout />
     <ImageSlider />
     <div>
-      {sections.map(({ heading, img, text, id }) => (
-        <Section heading={heading} img={img} text={text} id={id} key={id} />
+      {sections.map(({ heading, img, text, id, color }) => (
+        <Section heading={heading} img={img} text={text} id={id} key={id} color={color} />
       ))}
     </div>
   </div>
