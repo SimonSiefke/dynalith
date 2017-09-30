@@ -14,14 +14,14 @@
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.5",
-    "inferno": "^1.4.0",
-    "inferno-compat": "^1.4.0",
-    "inferno-server": "^1.4.0",
+    "inferno": "^3.9.0",
+    "inferno-compat": "^3.9.0",
+    "inferno-server": "^3.9.0",
     "module-alias": "^2.0.0",
-    "next": "^2.2.0",
-    "react": "^15.5.4",
+    "next": "^3.2.2",
+    "react": "^16.0.0",
     "react-burger-menu": "^2.0.1",
-    "react-dom": "^15.5.4",
+    "react-dom": "^16.0.0",
     "react-no-ssr": "^1.1.0"
   }
 }
